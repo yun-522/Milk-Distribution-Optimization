@@ -31,7 +31,12 @@ The work showcases how **optimization can guide government policy and logistics 
 - **Language:** Python  
 - **Solver:** Gurobi Optimizer (v10.0.2)  
 - **Libraries:** `gurobipy`, `numpy`, `pandas`  
-- **Data Sources:** ABS demographic data, RDI calcium data, synthetic distance data:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}
+- **Data Sources:** 
+- [ABS Regional Population by Age and Sex](https://www.abs.gov.au/statistics/people/population/regional-population-age-and-sex/latest-release#data-downloads)  
+- [ABS Census Data by Area](https://www.abs.gov.au/census/find-census-data/search-by-area?opendocument&navpos=220)  
+- RDI Calcium Intake Data — provided in QBUS2310 course materials (University of Sydney)  
+- Synthetic LGA distance data — generated using Python random number functions for modeling purposes  
+- [Population & demand dataset (XLSX)](./data/nsw_population_demand.xlsx) *(instructor-provided)*  
 
 ---
 
