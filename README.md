@@ -10,20 +10,29 @@ The work showcases how **optimization can guide government policy and logistics 
 ---
 
 ## Objectives  
-1. **Minimize distribution costs**  
-   - Cost of transporting milk between LGAs based on distance and demand  
-   - Cost of establishing new centers (capacity-dependent)  
-   - Cost of purchasing tanker trucks  
 
-2. **Ensure fairness & feasibility**  
-   - No center >50% of state demand  
-   - Maximum of 3 distribution centers  
+### Assignment 1 — Base Model (2001 & 2006 Data)  
+Formulated and solved the **core milk distribution optimization problem** for NSW.  
 
-3. **Extend the model**  
-   - Sensitivity analysis for 10% annual population growth  
-   - Impact of inflation (55.6% between 2001–2021)  
-   - Multi-objective optimization (cost vs. delivery time)  
-   - Tanker allocation and spoilage risk  
+- Build a **Mixed Integer Programming (MIP)** model to locate up to **3 distribution centers (DCs)**.  
+- Ensure **fairness constraints**:  
+  - No single DC serves >50% of NSW demand.  
+  - Maximum of 3 DCs total.  
+- Objective: **minimize total cost**, including:  
+  - Transport cost (distance × demand).  
+  - Establishment cost of new DCs (capacity-dependent).  
+- Conducted **scenario testing** using **2001 and 2006 datasets**.  
+
+---
+
+### Assignment 2 — Extended Model (2021 Data & Beyond)  
+Extended the base model to incorporate **real-world logistics and policy trade-offs**.  
+
+- **Tankers & Capacity:** Decision variables for tanker purchase and allocation.  
+- **Delivery Time:** Multi-objective optimization (minimize cost *and* delivery time for freshness).  
+- **Population Growth:** Sensitivity analysis with **10% annual growth** over 3 years.  
+- **Inflation:** Adjusted costs using **55.6% inflation (2001–2021)**.  
+- **2021 Data Application:** Evaluated DC placement with updated demand.  
 
 ---
 
@@ -49,6 +58,36 @@ milk-distribution-optimization/
 │── [assignment1(code+report).pdf](./assignment1(code+report).pdf)   # Assignment 1 notebook (code + report)  
 │── [assignment2(code+report).pdf](./assignment2(code+report).pdf)   # Assignment 2 notebook (code + report + extensions)  
 │── [README.md](./README.md)      # Project description  
+
+---
+
+## Key Results  
+### Assignment 1 — Base Model (2001 & 2006 Data)  
+- **2001 Model:** Optimal centers at *Port Macquarie-Hastings*, *Sydney*, and *Temora*.  
+  - Total cost: **AUD 18,098.71**
+- **2006 Model:** Cost rises slightly to **AUD 18,143.84**, still optimal at the same 3 locations
+- **2021 Model (without inflation):** **AUD 21,611.41**; with inflation: **AUD 33,627.36**
+- **Sensitivity (10% annual population growth):** Costs rise to **AUD 19,908.59 (Year 1)**, **AUD 21,899.44 (Year 2)**, and **AUD 24,089.39 (Year 3)**
+- **Tankers + Time Objective:** Optimal build in *Sydney*, *Temora*, *Woollahra* with 33 tankers in total; minimum cost ~**AUD 4.14M**
+
+### Assignment 2 — Extended Model (2021 Data & Beyond)  
+- **Tankers + Time Objective (Cost Focus):**  
+  - Selected DCs: *Sydney*, *Temora*, *Woollahra*  
+  - Tanker allocation:  
+    - Sydney: 11 tankers  
+    - Temora: 12 tankers  
+    - Woollahra: 10 tankers  
+  - Minimum cost: **AUD 4,143,722.31**  
+- **Tankers + Time Objective (Time Focus):**  
+  - Minimum total delivery time: **4,524.68 hours**  
+
+---
+
+## Insights  
+- Optimal site selection remained consistent despite growth, showing **robustness**.  
+- Inflation had a **major long-term cost impact**, doubling effective costs between 2001–2021.  
+- Multi-objective optimization highlighted trade-offs between **efficiency (cost)** and **freshness (time)**.  
+- Sensitivity analysis confirmed the model’s adaptability to population increases.  
 
 
 
