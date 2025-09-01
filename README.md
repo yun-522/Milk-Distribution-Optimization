@@ -36,11 +36,18 @@ The work showcases how **optimization can guide government policy and logistics 
 - [ABS Census Data by Area](https://www.abs.gov.au/census/find-census-data/search-by-area?opendocument&navpos=220)  
 - RDI Calcium Intake Data — provided in QBUS2310 course materials (University of Sydney)  
 - Synthetic LGA distance data — generated using Python random number functions for modeling purposes  
-- Population demand datasets (2001, 2006, 2021) — provided in QBUS2310 course materials (University of Sydney) [PDF format].
-- [Population & demand dataset 2001 (PDF)](./data/population_demand_2001.pdf)  
-- [Population & demand dataset 2006 (PDF)](./data/population_demand_2006.pdf)  
-- [Population & demand dataset 2021 (PDF)](./data/population_demand_2021.pdf)  
+- **Population Demand Datasets (2001, 2006, 2021)** — provided in *QBUS2310 Management Science* course materials (University of Sydney), available in PDF format: 
+  - [2001 Population & Demand Dataset (PDF)](./data/population_demand_2001.pdf)  
+  - [2006 Population & Demand Dataset (PDF)](./data/population_demand_2006.pdf)  
+  - [2021 Population & Demand Dataset (PDF)](./data/population_demand_2021.pdf)  
 
 ---
 
 ## Repository Structure  
+milk-distribution-optimization/  
+│── data/               # Population, RDI, and synthetic distance datasets (PDFs)  
+│── assignment1/        # HTML notebook for Assignment 1 (code + report)  
+│── assignment2/        # HTML notebook for Assignment 2 (code + report + extensions)  
+│── README.md           # Project description  
+
+
