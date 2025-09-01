@@ -45,9 +45,10 @@ The work showcases how **optimization can guide government policy and logistics 
 
 ## Repository Structure  
 milk-distribution-optimization/  
-│── data/               # Population, RDI, and synthetic distance datasets (PDFs)  
-│── assignment1/        # HTML notebook for Assignment 1 (code + report)  
-│── assignment2/        # HTML notebook for Assignment 2 (code + report + extensions)  
-│── README.md           # Project description  
+│── [data/](./data)               # Population, RDI, and synthetic distance datasets (PDFs)  
+│── [assignment1(code+report).pdf](./assignment1(code+report).pdf)   # Assignment 1 notebook (code + report)  
+│── [assignment2(code+report).pdf](./assignment2(code+report).pdf)   # Assignment 2 notebook (code + report + extensions)  
+│── [README.md](./README.md)      # Project description  
+
 
 
