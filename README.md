@@ -45,10 +45,12 @@ Extended the base model to incorporate **real-world logistics and policy trade-o
 - [ABS Census Data by Area](https://www.abs.gov.au/census/find-census-data/search-by-area?opendocument&navpos=220)  
 - RDI Calcium Intake Data — provided in QBUS2310 course materials (University of Sydney)  
 - Synthetic LGA distance data — generated using Python random number functions for modeling purposes  
-- **Population Demand Datasets (2001, 2006, 2021)** — provided in *QBUS2310 Management Science* course materials (University of Sydney), available in PDF format: 
-  - [2001 Population & Demand Dataset (PDF)](./data/population_demand_2001.pdf)  
-  - [2006 Population & Demand Dataset (PDF)](./data/population_demand_2006.pdf)  
-  - [2021 Population & Demand Dataset (PDF)](./data/population_demand_2021.pdf)  
+- **Population Demand Datasets (2001, 2006, 2021)** — provided in *QBUS2310 Management Science* course materials (University of Sydney).  
+  Due to licensing restrictions, the full datasets are available only in PDF format (not included here).  
+  To illustrate the structure, sample CSVs (first 5 rows) are provided:  
+  - [2001 Sample Dataset (CSV)](./data/sample_population_demand_2001.csv)  
+  - [2006 Sample Dataset (CSV)](./data/sample_population_demand_2006.csv)  
+  - [2021 Sample Dataset (CSV)](./data/sample_population_demand_2021.csv)  
 
 ---
 
